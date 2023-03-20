@@ -1,0 +1,431 @@
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+    * {      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-image: url('../img/galway-art.jfif');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-color: #353836;
+      font-family: "Poppins", sans-serif;
+    }
+    .bg-img{
+        background-image: url('../img/galway-art.jfif');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: #353836;
+        font-family: "Poppins", sans-serif;
+        filter: blur(2px);
+    }
+    @media only screen and (max-width: 767px) {
+        body {
+          background-image: url('../img/galway-art.jfif');
+        }
+          }
+          .footer{
+              background-color:#1d1f1d;
+          }
+          .footer .footer-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            margin: 1rem;
+          }
+        
+          .copyright,
+          .footer-list { margin-inline: 0; }
+          header a {
+            text-decoration: none;
+          }
+          
+          header {
+            padding: 0 20px;
+            background-color: #1d1f1d;
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+          }
+    
+    #brand {
+      font-weight: bold;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+    }
+    
+    #brand a {
+      font-family: cursive;
+      font-size:xx-large;
+      color: rgb(248, 246, 242);
+    }
+    
+    ul {
+      list-style: none;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    
+    ul a {
+        font-family: cursive;
+        color: rgb(252, 251, 249);
+    }
+    
+    ul li {
+      padding: 5px;
+      margin-left: 10px;
+    }
+    
+    ul li:hover {
+      transform: scale(1.1);
+      transition: 0.3s;
+    }
+    .active, ul li:hover {
+        border-bottom: 1px solid white;
+    }
+
+    .active, ul li:focus {
+        border-bottom: 1px solid white;
+    }
+    #hamburger-icon {
+      margin: auto 0;
+      display: none;
+      cursor: pointer;
+    }
+    
+    #hamburger-icon div {
+      width: 35px;
+      height: 3px;
+      background-color: white;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+    
+    .open .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+      transform: rotate(-45deg) translate(-6px, 6px);
+    }
+    
+    .open .bar2 {
+      opacity: 0;
+    }
+    
+    .open .bar3 {
+      -webkit-transform: rotate(45deg) translate(-6px, -8px);
+      transform: rotate(45deg) translate(-6px, -8px);
+    }
+    
+    .open .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    
+    .mobile-menu {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      height: calc(100vh - 50px);
+      width: 100%;
+    }
+    
+    .mobile-menu li {
+      margin-bottom: 10px;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      header nav {
+        display: none;
+      }
+    
+      #hamburger-icon {
+        display: block;
+      }
+    }
+
+
+html, body, .container {
+    height: 100%;
+  }
+  
+  /* Reset */
+  html, body, h1, p, a, div, section {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+  }
+  
+  /* Basic */
+  body { 
+    font: 18px/23px "Cantarell", sans-serif;
+    color: #ffffff;
+  }
+  
+  h1 {
+    color: #efecec;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+  
+  a {
+    color: #ffffff;
+  }
+  
+  p {
+    margin: 0 0 15px 0;
+  }
+  
+  strong {
+    font-weight: 700;
+  }
+  
+  blockquote {
+    display: block;
+    max-width: 480px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.3);  
+    color: #e1e1e1;
+    font-family: "Kotta One", serif;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  
+  blockquote cite {
+    display: block;
+    font: 18px/23px "Cantarell", sans-serif;
+    font-size: 16px;
+    margin-top: 16px;
+    color: #cccccc;
+    text-transform: uppercase;
+  }
+  
+  
+  .container {
+    display: table;
+    padding-top: 80px;
+    width: 100%;
+  }
+  
+  .content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  /* Special */
+  .sub-title {
+    margin: 50px auto;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: uppercase;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 6px 10px;
+    color: #cafaea;
+    border: 1px solid #cafaea;
+    border-radius: 3px;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  #more-content {
+    display: none;
+  }
+  
+  /* Media Queries */
+  @media only screen and (max-width: 340px) {
+    
+    .container {
+      position: relative;
+      display: block;
+      float: left;
+      vertical-align: baseline;
+      margin: 0 auto;
+      padding: 80px 0 0 0;
+    }
+    
+    #more-content {
+      float: left;
+      margin-right: 10px;
+      
+    }
+    
+    body h1 {
+      font-size: 18px;
+      line-height: 23px;
+    } 
+    
+    .content, blockquote {  
+      display: inline;
+      margin: 0 auto;
+      padding-top: 80px;
+      vertical-align: baseline;
+    }
+  
+    blockquote {
+      width: 150px;
+      margin: 15px auto;
+      font-size: 16px;
+      line-height: 21px;
+      background-color: transparent;
+    }
+  
+    blockquote cite {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  
+    .sub-title {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  
+    .button, p {
+      max-width: 150px;
+      margin: 0 auto;
+      font-size: 15px;
+      line-height: 20px;
+    }
+  
+  
+    
+  }
+  
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none;
+  justify-content: end;
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+.dropbtn {
+    background-color: #0d0e0d;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: end;
+    padding-right: 11rem;
+    padding-bottom: 5rem;
+
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    padding-top: 1rem;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #080808;
+  }
